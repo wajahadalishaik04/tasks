@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+    <h1>Registration Form</h1>
+    <form id="my-form">
+      <!-- form names group start here  -->
+      <div class="form-name-group">
+      <label for="fname" class="fname-label"> First Name</label>
+      <input type="text" placeholder="First Name:" id="fname" required>
+      <label for="lname" class="lname-label">Last Name </label>
+      <input type="text" placeholder="Last Name:" id="lname" required>
+     </div>   
+      <!-- form names group end here  -->
+
+    <!-- phone number  start here -->
+     <label for="phone-no" class="phone-no-label">Phone No<br></label>
+     <input type="number" id="phone-no" placeholder = "phone-no:" required><br>
+     <!-- phone number  end here -->
+     
+     <!-- dob start here -->
+     <label for="dob" class="dob-label"> Date Of Birth <br></label>
+     <input type="date" id="dob" required><br>
+      <!-- dob start here -->
+     
+    <!-- gmail start here -->
+     <label for="gmail" class="gmail-label">Gmail Id <br></label>
+     <input type="email" placeholder="Enter Gmail Id:"  id="gmail"><br>
+     <!-- gmail end here -->
+     <!-- address start here -->
+     <label for="address" class="address-label">Address <br></label>
+     <textarea cols="40" rows="3" id="address" placeholder="Enter Address" ></textarea><br>
+     <!-- address end here -->
+    <button type="submit" >Submit</button>
+    <div class="table">  
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Gmail</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      </div> 
+    </form>
+  </div>
+  
+  <script src="01-script.js"></script>
+</body>
+</html>
